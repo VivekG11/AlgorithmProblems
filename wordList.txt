@@ -1,0 +1,1 @@
+Hi,This is Vivek.To find a word using binary search.
