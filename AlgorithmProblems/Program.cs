@@ -31,11 +31,17 @@ namespace AlgorithmProblems
                     break;
                 case 3:
 
-            Console.WriteLine("Enter a array :");
+            
             int[] arr = { 12, 13, 29, 11, 04, 17 };
             InsertionSort insertionSort = new InsertionSort();
             insertionSort.insertionSort(arr);
             insertionSort.printArray(arr);
+                    break;
+                case 4:
+                    int[] array = { 20, 10, 40, 50, 60 };
+                    BubbleSort bubbleSort = new BubbleSort();
+                    bubbleSort.Sort(array);
+                    bubbleSort.Display(array);
                     break;
                 default:
                     Console.WriteLine("Enter valid option :");
