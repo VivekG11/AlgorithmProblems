@@ -11,16 +11,37 @@ namespace AlgorithmProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Algorithm Based Problems.....");
-            //Console.WriteLine("Enter a string to find possible permutations. ");
-            //String str = Console.ReadLine();
-            //int len = str.Length;
-           // Permutatoin.Permute(str, 0, len-1);
+            Console.WriteLine("Enter a choice to perform operation :");
+            int options = Convert.ToInt32(Console.ReadLine());
+            switch (options)
+            {
+                case 1:
+                 Console.WriteLine("Algorithm Based Problems.....");
+            Console.WriteLine("Enter a string to find possible permutations. ");
+            String str = Console.ReadLine();
+            int len = str.Length;
+            Permutatoin.Permute(str, 0, len - 1);
+                    break;
+                case 2:
 
             string filePath = File.ReadAllText(@"C:\Users\VIVEK\source\repos\AlgorithmProblems\wordList.txt");
             List<string> words = new List<string>(filePath.Split(" "));
             words.Sort();
             Binarysearch.BinarySearch(words);
+                    break;
+                case 3:
+
+            Console.WriteLine("Enter a array :");
+            int[] arr = { 12, 13, 29, 11, 04, 17 };
+            InsertionSort insertionSort = new InsertionSort();
+            insertionSort.insertionSort(arr);
+            insertionSort.printArray(arr);
+                    break;
+                default:
+                    Console.WriteLine("Enter valid option :");
+                    break;
+        }
+
         }
     }
 }
