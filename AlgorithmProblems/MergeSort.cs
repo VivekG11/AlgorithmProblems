@@ -62,9 +62,9 @@ namespace AlgorithmProblems
             if(start < end)
             {
                 int mid = (start + end) / 2;
-                Sort(arr, start, mid);
+                Sort(arr, start, end);
                 Sort(arr, mid + 1, end);
-                Merge(arr, start, mid, end);
+                Merge(arr, start, mid,end);
             }
         }
 

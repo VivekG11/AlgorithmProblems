@@ -49,6 +49,9 @@ namespace AlgorithmProblems
                     mergeSort.Sort(num, 0,num.Length-1);
                     mergeSort.PrintArray(num);
                     break;
+                case 6:
+                    Anagram.FindAnagram();
+                    break;
                 default:
                     Console.WriteLine("Enter valid option :");
                     break;
