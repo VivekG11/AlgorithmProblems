@@ -43,6 +43,12 @@ namespace AlgorithmProblems
                     bubbleSort.Sort(array);
                     bubbleSort.Display(array);
                     break;
+                case 5:
+                    int[] num = { 12, 23, 13, 26, 27, 11, 07, 29, 11, 17 };
+                    MergeSort mergeSort = new MergeSort();
+                    mergeSort.Sort(num, 0,num.Length-1);
+                    mergeSort.PrintArray(num);
+                    break;
                 default:
                     Console.WriteLine("Enter valid option :");
                     break;
