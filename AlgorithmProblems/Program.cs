@@ -52,6 +52,11 @@ namespace AlgorithmProblems
                 case 6:
                     Anagram.FindAnagram();
                     break;
+                case 7:
+                    PrimeNumberInRange primeNumber = new PrimeNumberInRange();
+                    Console.WriteLine("Prime Numbers are :");
+                    primeNumber.Prime();
+                    break;
                 default:
                     Console.WriteLine("Enter valid option :");
                     break;
