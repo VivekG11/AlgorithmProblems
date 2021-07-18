@@ -57,6 +57,11 @@ namespace AlgorithmProblems
                     Console.WriteLine("Prime Numbers are :");
                     primeNumber.Prime();
                     break;
+                case 8:
+                    AnagramAndPalindrome.Prime(111);
+                    AnagramAndPalindrome.Palindrome(121);
+                    AnagramAndPalindrome.Anagram("134", "341");
+                    break;
                 default:
                     Console.WriteLine("Enter valid option :");
                     break;
