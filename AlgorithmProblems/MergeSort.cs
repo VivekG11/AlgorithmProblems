@@ -4,15 +4,15 @@ using System.Text;
 
 namespace AlgorithmProblems
 {
-    public  class MergeSort
+    public  class MergeSort<T> where T:IComparable
     {
-        public  void Merge(int[] arr, int start, int mid, int end)
+        public  void Merge(T[] arr, int start, int mid, int end)
         {
             int n1 = mid - start + 1;
             int n2 = end - mid;
             int i, j;
-            int[] Left = new int[n1];
-            int[] Right = new int[n2];
+            T[] Left = new T[n1];
+            T[] Right = new T[n2];
             
             for(i = 0; i < n1; ++i)
             {
@@ -28,7 +28,7 @@ namespace AlgorithmProblems
             int k = 1;
             while(i < n1 && j < n2)
             {
-                if(Left[i] <= Right[j])
+                if(Left[i].CompareTo(Right[j]) < 0 || Left[i].CompareTo(Right[j])==0)
                 {
                     arr[k] = Left[i];
                     i++;
@@ -57,7 +57,7 @@ namespace AlgorithmProblems
             
 
         }
-        public void Sort(int[] arr, int start, int end)
+        public void Sort(T[] arr, int start, int end)
         {
             if(start < end)
             {
@@ -68,7 +68,7 @@ namespace AlgorithmProblems
             }
         }
 
-        public void PrintArray(int[] arr)
+        public void PrintArray(T[] arr)
         {
             int num = arr.Length;
             Console.WriteLine("Elements after sorted are :");

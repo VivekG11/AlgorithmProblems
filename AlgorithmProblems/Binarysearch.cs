@@ -4,9 +4,10 @@ using System.Text;
 
 namespace AlgorithmProblems
 {
-    public class Binarysearch
+    public class Binarysearch<T> where T:IComparable
     {
-        public static void BinarySearch(List<string> wordList)
+
+        public static void BinarySearch(List<T> wordList)
         {
             int start = 0;
             int mid = 0;
