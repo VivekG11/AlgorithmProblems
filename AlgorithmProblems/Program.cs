@@ -57,10 +57,14 @@ namespace AlgorithmProblems
                     Console.WriteLine("Prime Numbers are :");
                     primeNumber.Prime();
                     break;
-                case 8:
+              /*  case 8:
                     AnagramAndPalindrome.Prime(111);
                     AnagramAndPalindrome.Palindrome(121);
                     AnagramAndPalindrome.Anagram("134", "341");
+                    break;*/
+                case 9:
+                    GuessNumber guess = new GuessNumber();
+                    guess.Number();
                     break;
                 default:
                     Console.WriteLine("Enter valid option :");
